@@ -20,26 +20,26 @@
 <body>
   <h1>Benvenuto su AdPass</h1>
 
-<div id="banner-container">
-  <img src="https://via.placeholder.com/728x90.png?text=Banner+Pubblicitario+Fake" alt="Banner Pubblicitario" />
-</div>
+  <div id="banner-container">
+    <!-- Banner pubblicitario fake per simulazione -->
+    <img src="https://via.placeholder.com/728x90.png?text=Banner+Pubblicitario+Finto" alt="Banner Fake" width="728" height="90">
+  </div>
 
   <p>Tempo attivo oggi: <span id="uptime">0 min</span></p>
   <p>Guadagni stimati: <span id="earnings">0.0000€</span></p>
   <button onclick="simulateEarning()">Simula tempo attivo</button>
 
   <script>
-    let minutes = 0;
-    let earnings = 0;
+    let uptime = 0;
+    let earnings = 0.0000;
 
     function simulateEarning() {
-      minutes += 5;
-      earnings += 0.0007;
+      uptime += 5; // Simula 5 minuti per click
+      earnings += 0.0012; // Guadagno finto per click
 
-      document.getElementById("uptime").innerText = `${minutes} min`;
-      document.getElementById("earnings").innerText = `${earnings.toFixed(4)}€`;
+      document.getElementById('uptime').innerText = `${uptime} min`;
+      document.getElementById('earnings').innerText = `${earnings.toFixed(4)}€`;
     }
   </script>
 </body>
-
 </html>
