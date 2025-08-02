@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>AdPass - Guadagna Passivamente</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 40px;
+    }
+    h1 {
+      font-size: 28px;
+      margin-bottom: 10px;
+    }
+    #banner-container {
+      margin: 20px 0;
+    }
+  </style>
+</head>
+<body>
+  <h1>Benvenuto su AdPass</h1>
+
+  <div id="banner-container">
+    <!-- Banner statico iframe -->
+    <iframe src="https://your-ad-network.com/banner" width="728" height="90" style="border:none;"></iframe>
+    <!-- Sostituisci l'URL con un banner reale sicuro oppure uno mock temporaneo -->
+  </div>
+
+  <p>Tempo attivo oggi: <span id="uptime">0 min</span></p>
+  <p>Guadagni stimati: <span id="earnings">0.0000€</span></p>
+  <button onclick="simulateEarning()">Simula tempo attivo</button>
+
+  <script>
+    let minutes = 0;
+    let earnings = 0;
+
+    function simulateEarning() {
+      minutes += 5;
+      earnings += 0.0007;
+
+      document.getElementById("uptime").innerText = `${minutes} min`;
+      document.getElementById("earnings").innerText = `${earnings.toFixed(4)}€`;
+    }
+  </script>
+</body>
+</html>
