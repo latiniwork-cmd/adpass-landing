@@ -3,36 +3,22 @@
 <head>
   <meta charset="UTF-8">
   <title>AdPass - Guadagna Passivamente</title>
-  <style>
-    body {
-      font-family: Arial, sans-serif;
-      margin: 40px;
-    }
-    h1 {
-      font-size: 28px;
-      margin-bottom: 10px;
-    }
-    #banner-container {
-      margin: 20px 0;
-    }
-  </style>
 </head>
 <body>
   <h1>Benvenuto su AdPass</h1>
 
-<div id="banner-container">
-  <!-- Banner Adsterra -->
-  <script type="text/javascript">
-    atOptions = {
-      'key' : '08ac3bf9b79fff4c1e8d924ac753dbd0',
-      'format' : 'iframe',
-      'height' : 90,
-      'width' : 728,
-      'params' : {}
-    };
-  </script>
-  <script type="text/javascript" src="//www.highperformanceformat.com/08ac3bf9b79fff4c1e8d924ac753dbd0/invoke.js"></script>
-</div>
+  <div id="banner-container">
+    <script type="text/javascript">
+      atOptions = {
+        'key' : '08ac3bf9b79fff4c1e8d924ac753dbd0',
+        'format' : 'iframe',
+        'height' : 90,
+        'width' : 728,
+        'params' : {}
+      };
+    </script>
+    <script type="text/javascript" src="//www.highperformanceformat.com/08ac3bf9b79fff4c1e8d924ac753dbd0/invoke.js"></script>
+  </div>
 
   <p>Tempo attivo oggi: <span id="uptime">0 min</span></p>
   <p>Guadagni stimati: <span id="earnings">0.0000€</span></p>
@@ -40,16 +26,37 @@
 
   <script>
     let uptime = 0;
-    let earnings = 0.0000;
-
+    let earnings = 0;
     function simulateEarning() {
-      uptime += 5; // Simula 5 minuti per click
-      earnings += 0.0012; // Guadagno finto per click
-
-      document.getElementById('uptime').innerText = `${uptime} min`;
-      document.getElementById('earnings').innerText = `${earnings.toFixed(4)}€`;
+      uptime += 1;
+      earnings += 0.0001;
+      document.getElementById("uptime").innerText = uptime + " min";
+      document.getElementById("earnings").innerText = earnings.toFixed(4) + "€";
     }
   </script>
 </body>
 </html>
+Se dopo questo non appare il banner, i motivi sono:
 
+Il sito non è ancora approvato da Adsterra
+
+Il dominio GitHub Pages è stato bannato da Adsterra
+
+Il browser sta bloccando lo script
+
+Se vuoi posso:
+
+Verificare lo script esatto da Adsterra
+
+Aiutarti a usare altri provider che funzionano anche su siti test
+
+Fammi sapere.
+
+
+
+
+
+
+
+
+Chiedi a ChatGPT
